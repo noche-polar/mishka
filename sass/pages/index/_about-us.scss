@@ -1,0 +1,22 @@
+.about-us {
+    box-sizing: border-box;
+    padding-right: 29px;
+    padding-left: 29px;
+    padding-bottom: 30px;
+
+    font-family: $text-bold;
+    color: black;
+}
+
+.about-us__title {
+    box-sizing: border-box;
+    padding: 30px 0;
+
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.about-us__list {
+    font-size: 17px;
+    line-height: 20px;
+}

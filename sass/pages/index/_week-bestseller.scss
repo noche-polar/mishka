@@ -1,0 +1,33 @@
+.week-bestseller {
+    box-sizing: border-box;
+    padding: 34px 29px;
+}
+
+.week-bestseller__item {
+    font-family: $text-bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: black;
+}
+
+.week-bestseller__title {
+    font-family: $text-bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $tiffany-turquoise;
+}
+
+.week-bestseller__description {
+    font-family: $text-regular;   
+    font-size: 15px;
+    line-height: 24px;
+    color: $asphalt-grey;
+}
+
+.week-bestseller__price {
+    font-family: $text-bold;   
+    font-size: 17px;
+    line-height: 24px;
+    color: $asphalt-grey;   
+}

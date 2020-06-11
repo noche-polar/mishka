@@ -1,0 +1,21 @@
+.page-main__title {
+    display: block;
+    box-sizing: border-box;
+    padding: 70px 35px 120px;
+
+    font-family: $text-bold;
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+}
+
+.page-main__title--photo {
+    background-image: url("../img/main-bg-mobile.jpg");
+    background-position: 0 -20px;
+    background-repeat: no-repeat;
+}
+
+.page-main__title--grey {
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,32 @@
+.contacts {
+    box-sizing: border-box;
+    padding-top: 45px;
+    padding-bottom: 39px;
+}
+
+.contacts__title {
+    box-sizing: border-box;
+    padding-left: 29px;
+    padding-right: 29px;
+
+    font-family: $text-bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: black;
+}
+
+.contacts__list {
+    box-sizing: border-box;
+    padding-left: 29px;
+    padding-right: 29px;
+
+    font-family: $text-regular;
+    font-size: 15px;
+    line-height: 30px;
+    color: $asphalt-grey;
+}
+
+.contacts__write-us-link--wrapper {
+    padding-left: 29px;
+    padding-right: 29px;
+}

@@ -1,0 +1,36 @@
+.reviews {
+    box-sizing: border-box;
+    padding-right: 29px;
+    padding-left: 29px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.reviews__title {
+    font-family: $text-bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: black;
+}
+
+.reviews__text {
+    font-family: $text-regular;
+    font-size: 15px;
+    line-height: 30px;
+    color: $asphalt-grey;
+}
+
+.reviews__author-name {
+    font-family: $text-bold;
+    font-size: 17px;
+    line-height: 24px;
+    font-style: normal;
+    color: black;
+}
+
+.reviews__author-link {
+    font-family: $text-regular;
+    font-size: 17px;
+    line-height: 30px;
+    color: $asphalt-grey;
+}
