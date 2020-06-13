@@ -1,7 +1,9 @@
 .page-main__title {
     display: block;
     box-sizing: border-box;
-    padding: 70px 35px 120px;
+    width: 320px;
+    min-height: 176px;
+    padding: 73px 36px;
 
     font-family: $text-bold;
     font-size: 27px;
@@ -11,6 +13,9 @@
 }
 
 .page-main__title--photo {
+    min-height: 282px;
+    padding-bottom: 120px;
+
     background-image: url("../img/main-bg-mobile.jpg");
     background-position: 0 -20px;
     background-repeat: no-repeat;
@@ -18,4 +23,11 @@
 
 .page-main__title--grey {
     background-color: #f1f1f1;
+}
+
+.page-main__description {
+    font-family: $text-regular;
+    font-size: 13px;
+    line-height: 24px;
+    color: $asphalt-grey;
 }
