@@ -145,7 +145,9 @@ blockquote {
 .page-main__title {
   display: block;
   box-sizing: border-box;
-  padding: 70px 35px 120px;
+  width: 320px;
+  min-height: 176px;
+  padding: 73px 36px;
   font-family: "OpenSansBold", sans-serif;
   font-size: 27px;
   line-height: 30px;
@@ -153,12 +155,20 @@ blockquote {
   color: black; }
 
 .page-main__title--photo {
+  min-height: 282px;
+  padding-bottom: 120px;
   background-image: url("../img/main-bg-mobile.jpg");
   background-position: 0 -20px;
   background-repeat: no-repeat; }
 
 .page-main__title--grey {
   background-color: #f1f1f1; }
+
+.page-main__description {
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444; }
 
 .reviews {
   box-sizing: border-box;
@@ -261,4 +271,36 @@ blockquote {
   font-family: "OpenSansRegular", sans-serif;
   font-size: 13px;
   line-height: 24px;
+  color: #444444; }
+
+.forms__item {
+  border: none; }
+
+.forms__title {
+  font-family: "OpenSansBold", sans-serif;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb; }
+
+.forms__label {
+  font-family: "OpenSansBold", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: black; }
+
+.forms__input--text {
+  border: none;
+  border-bottom: 2px solid black; }
+
+.forms__input--text::placeholder {
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444; }
+
+.forms__warning {
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
   color: #444444; }

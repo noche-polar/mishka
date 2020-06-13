@@ -1,0 +1,37 @@
+.forms__item {
+    border: none;
+}
+
+.forms__title {
+    font-family: $text-bold;
+    font-size: 17px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $tiffany-turquoise;
+}
+
+.forms__label {
+    font-family: $text-bold;
+    font-size: 17px;
+    line-height: 18px;
+    color: black;
+}
+
+.forms__input--text {
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.forms__input--text::placeholder {
+    font-family: $text-regular;
+    font-size: 17px;
+    line-height: 18px;
+    color: $asphalt-grey;
+}
+
+.forms__warning {
+    font-family: $text-regular;
+    font-size: 14px;
+    line-height: 16px;
+    color: $asphalt-grey;
+}
