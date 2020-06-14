@@ -8,8 +8,9 @@ gulp.task('default', function() {
         server: ''
     });
 
-    gulp.watch('*.html').on('change', bsync.reload);
-    gulp.watch('sass/*.scss')
+    gulp.watch('*.html')
+        .on('change', bsync.reload);
+    gulp.watch('sass/**/*.scss')
         .on('change', gulp.series('launch-sass'))    
 });
     
