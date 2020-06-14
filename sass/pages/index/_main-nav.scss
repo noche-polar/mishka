@@ -33,8 +33,78 @@
     color: black;
 }
 
+.main-nav__search-link {
+    display: block;
+    position: relative;
+}
+
+.main-nav__search-link::before {
+    content: "";
+
+    position: absolute;
+    top: 3px;
+    left: -44px;
+
+    width: 18px;
+    height: 18px;
+
+    background-image: url("../../../svg/search.svg");
+    background-repeat: no-repeat;
+
+    background-color: black;
+    transform: rotate(90deg);
+    opacity: 0.2;
+}
+
+.main-nav__search-link:hover::before,
+.main-nav__search-link:focus::before {
+    opacity: 1;
+    background-color: #63d1bb;
+}
+
+.main-nav__search-link:active::before {
+    opacity: 0.3;
+    background-color: #63d1bb;
+}
+
+.main-nav__cart-link {
+    display: block;
+    position: relative;
+}
+
+.main-nav__cart-link::before {
+    content: "";
+
+    position: absolute;
+    top: 3px;
+    left: -44px;
+
+    width: 21px;
+    height: 18px;
+
+    background-image: url("../../../svg/cart.svg");
+    background-repeat: no-repeat;
+
+    background-color: black;
+    transform: rotate(180deg);
+    opacity: 0.2;
+}
+
+.main-nav__cart-link:hover::before,
+.main-nav__cart-link:focus::before {
+    opacity: 1;
+    background-color: #63d1bb;
+}
+
+.main-nav__cart-link:active::before {
+    opacity: 0.3;
+    background-color: #63d1bb;
+}
+
 .main-nav__shipping {
     display: none;
+    box-sizing: border-box;
+
     font-family: $text-regular;
     font-size: 15px;
     line-height: 24px;
@@ -81,6 +151,7 @@
         justify-content: flex-end;
         align-items: center;
 
+        height: 90px;
         margin-left: auto;
     }
     
@@ -93,6 +164,7 @@
         align-items: center;
         justify-content: flex-start;
 
+        height: 45px;
         margin-right: auto;
     }
 
@@ -114,7 +186,22 @@
     .main-nav__shipping {
         display: block;
         order: 10;
+
+        height: 45px;
         margin-left: auto;
+        padding-top: 10px;
+    }
+
+    .main-nav__search-link--visually-hidden {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+    }
+
+    .main-nav__search-link::before {
+        top: -9px;
     }
 }
 

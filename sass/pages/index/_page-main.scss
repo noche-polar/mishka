@@ -1,9 +1,28 @@
+.page-main__title--bg-photo {
+    max-width: 575px;
+    min-height: 155px;
+    padding-top: 75px;
+    padding-right: calc((100% - 575px) / 2);
+    padding-left: calc((100% - 575px) / 2);
+    
+    background-color: #f9f9f9;
+    background-image: url("../../../img/hero-mobile-l.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-main__title--bg-grey {
+    background-image: none;
+    background-color: #f1f1f1;
+}
+
 .page-main__title {
     display: block;
     box-sizing: border-box;
-    width: 320px;
-    min-height: 176px;
-    padding: 73px 36px;
+    min-width: 250px;
+    margin: 0 auto;
+    padding-right: 5px;
+    padding-left: 5px;
 
     font-family: $text-bold;
     font-size: 27px;
@@ -12,18 +31,24 @@
     color: black;
 }
 
-.page-main__title--photo {
-    min-height: 282px;
-    padding-bottom: 120px;
+@media (min-width: 768px) {
+    .page-main__title--bg-photo {
+        min-height: 746px;
+        padding-top: 165px;
+        margin-top: -45px;
+        margin-bottom: -315px;
 
-    background-image: url("../img/main-bg-mobile.jpg");
-    background-position: 0 -20px;
-    background-repeat: no-repeat;
+        background-image: url("../../../img/hero-desktop.jpg");
+        background-position: center -30px;
+    }
+
+    .page-main__title {
+        padding-right: 80px;
+        padding-left: 80px;           
+    }
 }
 
-.page-main__title--grey {
-    background-color: #f1f1f1;
-}
+/* Not index.html */
 
 .page-main__description {
     font-family: $text-regular;

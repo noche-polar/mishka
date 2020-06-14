@@ -1,3 +1,7 @@
+.categories {
+    margin: 0 auto;
+}
+
 .categories__title {
     font-family: $text-bold;
     font-size: 19px;
@@ -16,4 +20,18 @@
 
 .categories__item:nth-child(2n+2) {
     background-color: $tiffany-turquoise__dark;
+}
+
+@media (min-width: 768px) {
+    .categories {
+        width: 668px;
+    }
+
+    .categories__list {
+        display: flex;
+    }
+
+    .categories__item {
+        flex-basis: 50%;
+    }
 }

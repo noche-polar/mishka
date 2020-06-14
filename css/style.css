@@ -72,6 +72,9 @@ p {
   font-size: 17px;
   line-height: 20px; }
 
+.categories {
+  margin: 0 auto; }
+
 .categories__title {
   font-family: "OpenSansBold", sans-serif;
   font-size: 19px;
@@ -87,6 +90,14 @@ p {
 
 .categories__item:nth-child(2n+2) {
   background-color: #56c3b2; }
+
+@media (min-width: 768px) {
+  .categories {
+    width: 668px; }
+  .categories__list {
+    display: flex; }
+  .categories__item {
+    flex-basis: 50%; } }
 
 .contacts {
   box-sizing: border-box;
@@ -158,8 +169,61 @@ p {
   line-height: 24px;
   color: black; }
 
+.main-nav__search-link {
+  display: block;
+  position: relative; }
+
+.main-nav__search-link::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -44px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../../svg/search.svg");
+  background-repeat: no-repeat;
+  background-color: black;
+  transform: rotate(90deg);
+  opacity: 0.2; }
+
+.main-nav__search-link:hover::before,
+.main-nav__search-link:focus::before {
+  opacity: 1;
+  background-color: #63d1bb; }
+
+.main-nav__search-link:active::before {
+  opacity: 0.3;
+  background-color: #63d1bb; }
+
+.main-nav__cart-link {
+  display: block;
+  position: relative; }
+
+.main-nav__cart-link::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -44px;
+  width: 21px;
+  height: 18px;
+  background-image: url("../../../svg/cart.svg");
+  background-repeat: no-repeat;
+  background-color: black;
+  transform: rotate(180deg);
+  opacity: 0.2; }
+
+.main-nav__cart-link:hover::before,
+.main-nav__cart-link:focus::before {
+  opacity: 1;
+  background-color: #63d1bb; }
+
+.main-nav__cart-link:active::before {
+  opacity: 0.3;
+  background-color: #63d1bb; }
+
 .main-nav__shipping {
   display: none;
+  box-sizing: border-box;
   font-family: "OpenSansRegular", sans-serif;
   font-size: 15px;
   line-height: 24px;
@@ -194,6 +258,7 @@ p {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    height: 90px;
     margin-left: auto; }
   .main-nav__list--site-nav {
     order: 3;
@@ -202,6 +267,7 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    height: 45px;
     margin-right: auto; }
   .main-nav__item--user-nav,
   .main-nav__item--site-nav {
@@ -215,7 +281,17 @@ p {
   .main-nav__shipping {
     display: block;
     order: 10;
-    margin-left: auto; } }
+    height: 45px;
+    margin-left: auto;
+    padding-top: 10px; }
+  .main-nav__search-link--visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px; }
+  .main-nav__search-link::before {
+    top: -9px; } }
 
 @media (min-width: 1250px) {
   .main-nav__list--site-nav {
@@ -270,28 +346,47 @@ p {
     padding-left: 50px;
     padding-right: 50px; } }
 
+.page-main__title--bg-photo {
+  max-width: 575px;
+  min-height: 155px;
+  padding-top: 75px;
+  padding-right: calc((100% - 575px) / 2);
+  padding-left: calc((100% - 575px) / 2);
+  background-color: #f9f9f9;
+  background-image: url("../../../img/hero-mobile-l.jpg");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.page-main__title--bg-grey {
+  background-image: none;
+  background-color: #f1f1f1; }
+
 .page-main__title {
   display: block;
   box-sizing: border-box;
-  width: 320px;
-  min-height: 176px;
-  padding: 73px 36px;
+  min-width: 250px;
+  margin: 0 auto;
+  padding-right: 5px;
+  padding-left: 5px;
   font-family: "OpenSansBold", sans-serif;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
   color: black; }
 
-.page-main__title--photo {
-  min-height: 282px;
-  padding-bottom: 120px;
-  background-image: url("../img/main-bg-mobile.jpg");
-  background-position: 0 -20px;
-  background-repeat: no-repeat; }
+@media (min-width: 768px) {
+  .page-main__title--bg-photo {
+    min-height: 746px;
+    padding-top: 165px;
+    margin-top: -45px;
+    margin-bottom: -315px;
+    background-image: url("../../../img/hero-desktop.jpg");
+    background-position: center -30px; }
+  .page-main__title {
+    padding-right: 80px;
+    padding-left: 80px; } }
 
-.page-main__title--grey {
-  background-color: #f1f1f1; }
-
+/* Not index.html */
 .page-main__description {
   font-family: "OpenSansRegular", sans-serif;
   font-size: 13px;
@@ -336,7 +431,8 @@ p {
 
 .week-bestseller {
   box-sizing: border-box;
-  padding: 34px 29px; }
+  padding: 34px 29px;
+  background-color: white; }
 
 .week-bestseller__item {
   font-family: "OpenSansBold", sans-serif;

@@ -24,10 +24,12 @@
                 </ul>
                 <ul class="main-nav__list main-nav__list--user-nav">
                     <li class="main-nav__item main-nav__item--user-nav">
-                        <a href="#">Поиск по сайту</a>
+                        <a class="main-nav__search-link" href="#">
+                            <span class="main-nav__search-link--visually-hidden">Поиск по сайту</span>
+                        </a>
                     </li>
                     <li class="main-nav__item main-nav__item--user-nav">
-                        <a href="#">Корзина: пока пуста</a>
+                        <a class="main-nav__cart-link" href="#">Корзина: пока пуста</a>
                     </li>
                 </ul>
                 <ul class="main-nav__list main-nav__list--offers-nav">
@@ -44,7 +46,9 @@
     </header>
 
     <main class="page-main">
-        <h1 class="page-main__title page-main__title--photo">Милые штуки ручной работы для дома</h1>
+        <div class="page-main__title--bg-photo">
+            <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
+        </div>
 
         <section class="categories">
             <h2 class="visually-hidden">Категории товаров</h2>
