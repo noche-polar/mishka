@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+    <metadata/>
+    <defs>
+        <clipPath id="a" clipPathUnits="userSpaceOnUse">
+            <path d="M0 17.6h17.6V0H0z"/>
+        </clipPath>
+    </defs>
+    <mask id="myMask">
+        <rect x="0" y="0" width="18" height="18" fill="white" />
+        <path fill="black" d="M2.2 9.9a5.5 5.5 0 1011 0 5.5 5.5 0 00-11 0m15.07-8.03l-3.42 3.41a7.7 7.7 0 11-1.54-1.54L15.73.34A1 1 0 0116.5 0c.6 0 1.1.5 1.1 1.1 0 .24-.06.5-.33.77"/>
+    </mask>
+    
+    <polygon points="0,0 18,0 18,18 0,18" mask="url(#myMask)" fill="white"></polygon>
+</svg>
