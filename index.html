@@ -8,27 +8,37 @@
 </head>
 <body>
     <header class="page-header">
-        <a class="page-header__logo" href="#">
-            <img class="page-header__logo-image" src="img/mishka-logo-mobile.png" width="86" height="35" alt="Магазин Мишка">
-        </a>
-
         <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
             <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item">
+                <a class="main-nav__logo" href="#">
+                    <div class="main-nav__logo-image" aria-label="Магазин Мишка"></div>
+                </a>
+                <ul class="main-nav__list main-nav__list--site-nav">
+                    <li class="main-nav__item main-nav__item--site-nav">
                         <a href="./catalog.html">Каталог товаров</a>
                     </li>
-                    <li class="site-list__item">
+                    <li class="main-nav__item main-nav__item--site-nav">
                         <a href="./form.html">Вязание на заказ</a>
                     </li>
-                    <li class="site-list__item">
+                </ul>
+                <ul class="main-nav__list main-nav__list--user-nav">
+                    <li class="main-nav__item main-nav__item--user-nav">
                         <a href="#">Поиск по сайту</a>
                     </li>
-                    <li class="site-list__item">
+                    <li class="main-nav__item main-nav__item--user-nav">
                         <a href="#">Корзина: пока пуста</a>
                     </li>
                 </ul>
+                <ul class="main-nav__list main-nav__list--offers-nav">
+                    <li class="main-nav__item main-nav__item--offers-nav">
+                        <a href="#">Новые поступления</a>
+                    </li>
+                    <li class="main-nav__item main-nav__item--offers-nav">
+                        <a href="#">Распродажа</a>
+                    </li>
+                </ul>
+                <p class="main-nav__shipping">Бесплатная доставка по России</p>
             </div>
         </nav>
     </header>
