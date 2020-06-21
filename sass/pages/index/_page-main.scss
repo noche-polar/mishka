@@ -32,11 +32,19 @@
 }
 
 @media (min-width: 768px) {
+    .page-main__title {
+        font-size: 43px;
+        line-height: 50px;
+    }
+
     .page-main__title--bg-photo {
+        max-width: 670px;
         min-height: 746px;
         padding-top: 165px;
         margin-top: -45px;
         margin-bottom: -315px;
+        padding-right: calc((100% - 670px) / 2);
+        padding-left: calc((100% - 670px) / 2);
 
         background-image: url("../../../img/hero-desktop.jpg");
         background-position: center -30px;
@@ -45,6 +53,13 @@
     .page-main__title {
         padding-right: 80px;
         padding-left: 80px;           
+    }
+}
+
+@media (min-width: 1250px) {
+    .page-main__title {
+        font-size: 53px;
+        line-height: 57px;
     }
 }
 

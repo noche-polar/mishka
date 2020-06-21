@@ -93,11 +93,18 @@ p {
 
 @media (min-width: 768px) {
   .categories {
-    width: 668px; }
+    width: calc(100% - 100px); }
+  .categories__title {
+    font-size: 20px;
+    line-height: 30px; }
   .categories__list {
     display: flex; }
   .categories__item {
     flex-basis: 50%; } }
+
+@media (min-width: 1250px) {
+  .categories {
+    width: calc(100% - 200px); } }
 
 .contacts {
   box-sizing: border-box;
@@ -375,16 +382,27 @@ p {
   color: black; }
 
 @media (min-width: 768px) {
+  .page-main__title {
+    font-size: 43px;
+    line-height: 50px; }
   .page-main__title--bg-photo {
+    max-width: 670px;
     min-height: 746px;
     padding-top: 165px;
     margin-top: -45px;
     margin-bottom: -315px;
+    padding-right: calc((100% - 670px) / 2);
+    padding-left: calc((100% - 670px) / 2);
     background-image: url("../../../img/hero-desktop.jpg");
     background-position: center -30px; }
   .page-main__title {
     padding-right: 80px;
     padding-left: 80px; } }
+
+@media (min-width: 1250px) {
+  .page-main__title {
+    font-size: 53px;
+    line-height: 57px; } }
 
 /* Not index.html */
 .page-main__description {
@@ -453,11 +471,123 @@ p {
   line-height: 24px;
   color: #444444; }
 
+.week-bestseller__image--mob {
+  display: block; }
+
+.week-bestseller__image--tabl,
+.week-bestseller__image--deskt {
+  display: none; }
+
 .week-bestseller__price {
   font-family: "OpenSansBold", sans-serif;
   font-size: 17px;
   line-height: 24px;
   color: #444444; }
+
+.week-bestseller__order {
+  max-width: 320px;
+  margin: 0 auto; }
+
+@media (min-width: 768px) {
+  .week-bestseller {
+    min-width: 668px;
+    padding-right: 50px;
+    padding-left: 50px; }
+  .week-bestseller__header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 55px; }
+  .week-bestseller__title {
+    margin-left: auto; }
+  .week-bestseller__item {
+    font-size: 43px;
+    line-height: 50px; }
+  .week-bestseller__about {
+    box-sizing: border-box;
+    width: 100%;
+    height: 404px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .week-bestseller__description {
+    width: 43%;
+    margin-bottom: 55px;
+    font-size: 17px;
+    line-height: 30px; }
+  .week-bestseller__features {
+    width: 43%;
+    margin-bottom: 55px; }
+  .week-bestseller__image--tabl {
+    display: block; }
+  .week-bestseller__image--mob,
+  .week-bestseller__image--deskt {
+    display: none; }
+  .week-bestseller__image--svg {
+    order: 1;
+    flex-basis: 404px;
+    align-self: flex-end;
+    height: 404px; }
+  .week-bestseller__price {
+    font-size: 20px;
+    align-self: center; }
+  .week-bestseller__order {
+    max-width: 290px;
+    align-self: center;
+    margin-top: auto; } }
+
+@media (min-width: 1250px) {
+  .week-bestseller {
+    min-width: 100%;
+    height: calc(636px + (70px * 2));
+    padding: 70px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .week-bestseller__header {
+    margin-top: 44px;
+    margin-bottom: 65px; }
+  .week-bestseller__title {
+    order: 1;
+    box-sizing: border-box;
+    flex-basis: 16.66%;
+    margin-left: 0;
+    padding: 0 25px;
+    text-align: center; }
+  .week-bestseller__item {
+    z-index: 1;
+    order: 2;
+    font-size: 53px;
+    line-height: 57px; }
+  .week-bestseller__about {
+    flex-grow: 1;
+    width: 28%;
+    margin-left: 16.66%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .week-bestseller__description {
+    width: 100%; }
+  .week-bestseller__features {
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: auto; }
+  .week-bestseller__image--deskt {
+    display: block; }
+  .week-bestseller__image--mob,
+  .week-bestseller__image--tabl {
+    display: none; }
+  .week-bestseller__image--svg {
+    height: 636px;
+    position: absolute;
+    bottom: 0;
+    right: calc(-1 * (180% + 18%)); }
+  .week-bestseller__price {
+    margin-top: auto; }
+  .week-bestseller__order {
+    margin-top: 35px; } }
 
 .good__title {
   font-family: "OpenSansBold", sans-serif;

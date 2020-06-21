@@ -55,40 +55,55 @@
             <ul class="categories__list">
                 <li class="categories__item categories__item--interior">
                     <h3 class="categories__title">
-                        Предметы интерьера
+                        <a href="" class="categories__link">
+                            Предметы интерьера
+                        </a>
                     </h3>
                 </li>
                 <li class="categories__item categories__item--toys">
                     <h3 class="categories__title">
-                        Детские игрушки
+                        <a href="" class="categories__link">
+                            Детские игрушки
+                        </a>
                     </h3>
                 </li>
             </ul>
         </section>
 
         <section class="week-bestseller">
-            <h3 class="week-bestseller__item">Вязаные корзинки</h3>
-            <h2 class="week-bestseller__title">Товар недели</h2>
-            <p class="week-bestseller__description">
-                Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-            </p>
-            <table class="week-bestseller__features features-list">
-                <tr class="features-list__row">
-                    <td class="features-list__name">Цвет:</td>
-                    <td class="features-list__value">«Тиффани»/серый</td>
-                </tr>
-                <tr class="features-list__row">
-                    <td class="features-list__name">Диаметр:</td>
-                    <td class="features-list__value">25 см</td>
-                </tr>
-                <tr class="features-list__row">
-                    <td class="features-list__name">Высота:</td>
-                    <td class="features-list__value">25 см</td>
-                </tr>
-            </table>
-            <img class="week-bestseller__image" width="260" height="315" src="img/triple-set-mobile.jpg" alt="Фото набора вязаных корзинок">
-            <p class="week-bestseller__price">Цена: 990 руб.</p>
-            <button class="week-bestseller__order button" type="button">Заказать</button>
+            <div class="week-bestseller__header">
+                <h3 class="week-bestseller__item">Вязаные корзинки</h3>
+                <h2 class="week-bestseller__title">Товар недели</h2>
+            </div>
+            <div class="week-bestseller__about">
+                <p class="week-bestseller__description">
+                    Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+                </p>
+                <table class="week-bestseller__features features-list">
+                    <tr class="features-list__row">
+                        <td class="features-list__name">Цвет:</td>
+                        <td class="features-list__value">«Тиффани»/серый</td>
+                    </tr>
+                    <tr class="features-list__row">
+                        <td class="features-list__name">Диаметр:</td>
+                        <td class="features-list__value">25 см</td>
+                    </tr>
+                    <tr class="features-list__row">
+                        <td class="features-list__name">Высота:</td>
+                        <td class="features-list__value">25 см</td>
+                    </tr>
+                </table>
+                <svg class = "week-bestseller__image--svg" role="image" aria-label="Набор вязаных корзинок"
+                    preserveAspectRatio = "xMidyMid slice"
+                    viewBox = "0 0 1 1.21">
+                    <image class = "week-bestseller__image week-bestseller__image--mob" width = "100%" height = "100%" xlink:href = "img/triple-set-mobile.jpg"></image>
+                    <image class = "week-bestseller__image week-bestseller__image--tabl" width = "100%" height = "100%" xlink:href = "img/triple-set-tablet.jpg"></image>
+                    <image class = "week-bestseller__image week-bestseller__image--deskt" width = "100%" height = "100%" xlink:href = "img/triple-set-desktop.jpg"></image>
+                </svg>
+                <!-- <img class="week-bestseller__image" width="260" height="315" src="img/triple-set-mobile.jpg" alt="Набор вязаных корзинок"> -->
+                <p class="week-bestseller__price">Цена: 990 руб.</p>
+                <button class="week-bestseller__order button" type="button">Заказать</button>                
+            </div>
         </section>
 
         <section class="about-us">
