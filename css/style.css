@@ -43,8 +43,9 @@ p {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  height: 52px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-family: "OpenSansBold";
   font-size: 18px;
   line-height: 20px;
@@ -142,34 +143,116 @@ p {
 
 .contacts {
   box-sizing: border-box;
-  padding-top: 45px;
-  padding-bottom: 39px; }
+  width: 100%;
+  margin-top: 45px;
+  margin-bottom: 39px; }
 
 .contacts__title {
-  box-sizing: border-box;
-  padding-left: 29px;
-  padding-right: 29px;
   font-family: "OpenSansBold", sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: black; }
 
+.contacts__wrapper {
+  padding: 0 29px 25px; }
+
 .contacts__list {
-  box-sizing: border-box;
-  padding-left: 29px;
-  padding-right: 29px;
+  margin: 0 auto;
   font-family: "OpenSansRegular", sans-serif;
   font-size: 15px;
   line-height: 30px;
-  color: #444444; }
+  color: #444444;
+  border: none; }
+
+.contacts__name {
+  display: block;
+  min-width: 48px;
+  margin-right: 30px; }
+
+.contacts__map {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  margin: 0 auto 40px; }
 
 .contacts__write-us-link--wrapper {
-  padding-left: 29px;
-  padding-right: 29px; }
+  padding: 0 29px;
+  margin: 0 auto;
+  max-width: 320px; }
+
+@media (min-width: 768px) {
+  .contacts__wrapper {
+    padding-left: 50px;
+    padding-right: 50px; }
+  .contacts__title {
+    margin-bottom: 55px;
+    font-size: 43px;
+    line-height: 50px; }
+  .contacts__list {
+    font-size: 17px; }
+  .contacts__list-body {
+    max-width: 668px;
+    display: flex;
+    flex-wrap: nowrap; }
+  .contacts__item {
+    flex-basis: 300px;
+    margin-right: 34px;
+    display: flex;
+    flex-wrap: nowrap; }
+  .contacts__name {
+    margin-right: 25px; }
+  .contacts__map {
+    display: block;
+    max-width: 768px;
+    margin: 0 auto 55px; }
+  .contacts__write-us-link--wrapper {
+    width: 230px; } }
+
+@media (min-width: 1250px) {
+  .contacts {
+    position: relative;
+    width: calc(100% - 100px * 2);
+    height: 457px;
+    margin: 70px 100px 105px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .contacts__wrapper {
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 175px;
+    padding-right: 50px; }
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px; }
+  .contacts__list-body {
+    flex-direction: column; }
+  .contacts__item {
+    flex-basis: 50px; }
+  .contacts__name {
+    min-width: 55px; }
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    max-width: 768px;
+    margin: 0; }
+  .contacts__write-us-link--wrapper {
+    width: 50%;
+    max-width: 50%;
+    padding: 0;
+    margin: 0;
+    margin-top: auto; }
+  .contacts__write-us-link {
+    display: block;
+    width: 230px;
+    margin-left: 175px;
+    margin-right: auto; } }
 
 .copyright {
   box-sizing: border-box;
-  padding-top: 28px; }
+  width: 182px; }
 
 .copyright__text {
   font-family: "OpenSansBold", sans-serif;
@@ -365,9 +448,47 @@ p {
 
 .page-footer {
   box-sizing: border-box;
+  height: 160px;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #f1f1f1; }
+
+.page-footer__logo {
+  display: none;
+  width: 102px;
+  height: 34px;
+  background-image: url();
+  background-position: 0 0;
+  background-repeat: no-repeat; }
+
+.page-footer__social {
+  display: block;
+  margin: 0 auto 20px; }
+
+.page-footer__copyright {
+  display: block;
+  margin: 0 auto; }
+
+@media (min-width: 768px) {
+  .page-footer {
+    height: 143px;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center; }
+  .page-footer__logo {
+    display: block;
+    flex-basis: calc(50% - 141px / 2); }
+  .page-footer__social {
+    margin: 0; }
+  .page-footer__copyright {
+    margin: 0;
+    flex-basis: calc(50% - 141px / 2); } }
+
+@media (min-width: 1250px) {
+  .page-footer {
+    padding-right: 100px;
+    padding-left: 100px; } }
 
 .page-header {
   box-sizing: border-box;
@@ -458,6 +579,9 @@ p {
   line-height: 30px;
   color: black; }
 
+.reviews__item {
+  margin-bottom: 35px; }
+
 .reviews__text {
   font-family: "OpenSansRegular", sans-serif;
   font-size: 15px;
@@ -472,14 +596,86 @@ p {
   color: black; }
 
 .reviews__author-link {
+  display: block;
   font-family: "OpenSansRegular", sans-serif;
   font-size: 17px;
   line-height: 30px;
   color: #444444; }
 
+.reviews__button-wrapper {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  width: calc(100% - 29px * 2);
+  display: flex; }
+
+.reviews__prev,
+.reviews__next {
+  flex-basis: 130px; }
+
+.reviews__prev {
+  margin-right: auto; }
+
+.reviews__write {
+  max-width: 320px;
+  margin: 0 auto; }
+
+@media (min-width: 768px) {
+  .reviews {
+    position: relative;
+    padding: 80px 50px;
+    height: 457px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../../../img/reviews-bg.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat; }
+  .reviews__title {
+    order: 1;
+    display: block;
+    font-size: 43px;
+    line-height: 40px; }
+  .reviews__write {
+    max-width: 175px;
+    margin-left: auto;
+    margin-right: 0;
+    order: 2;
+    align-self: flex-start; }
+  .reviews__item {
+    order: 3;
+    align-self: flex-end;
+    margin: 0; }
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 50px; }
+  .reviews__author-name {
+    font-size: 18px; }
+  .reviews__button-wrapper {
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+    display: block;
+    width: 166px;
+    margin: 0;
+    order: 4; }
+  .reviews__prev,
+  .reviews__next {
+    flex-basis: 83px; } }
+
+@media (min-width: 1250px) {
+  .reviews {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 14%;
+    padding-right: 0; }
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px; } }
+
 .social {
   box-sizing: border-box;
-  padding-bottom: 25px; }
+  width: 141px; }
 
 .week-bestseller {
   box-sizing: border-box;
