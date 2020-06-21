@@ -20,3 +20,53 @@
     font-size: 17px;
     line-height: 20px;
 }
+
+@media (min-width: 768px) {
+    .about-us {
+        // max-height: 640px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .about-us__title {
+        font-size: 43px;
+        line-height: 50px;
+    }
+
+    .about-us__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        max-height: 395px;
+
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .about-us__item {
+        flex-basis: 100px;
+        max-width: 36%;
+    }
+}
+
+@media (min-width: 1250px) {
+    .about-us {
+        margin: 0 100px;
+        padding: 0;
+    }
+
+    .about-us__title {
+        margin: 0 16.66%;
+
+        font-size: 53px;
+        line-height: 57px;   
+    }
+
+    .about-us__list {
+        margin: 0 16.66%;
+
+        font-size: 20px;
+        line-height: 22px;
+    }
+}
